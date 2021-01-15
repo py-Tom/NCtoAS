@@ -8,14 +8,19 @@ Run main.py and select the correct path for the input and output files. Set the 
 
 #### Example
 
-1. Define workpiece
+1. Define the workpiece, program the machining process and generate the G-code.
 
-2. Program machining process
+<img src="/_examples/CAD.png" width="318" height="406" /> <img src="/_examples/CAM.png" width="318" height="406" />
 
-3. Generate code
+2. Translate
 
-4. Translate to AS
+<img src="/_examples/NCtoAS-interface.png" />
 
-5. Test
+3. Test
 
-6. Upload and run
+<img src="/_examples/K-roset.png" />
+
+4. Upload and run
+
+<img src="/_examples/cropped_test.gif" width="466" height="350" />
+
