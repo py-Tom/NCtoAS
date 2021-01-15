@@ -10,7 +10,7 @@ Run main.py and select the correct path for the input and output files. Set the 
 
 1. Define the workpiece, program the machining process and generate the G-code.
 
-<img src="/_examples/CAD.png" width="318" height="406" /> <img src="/_examples/CAM.png" width="318" height="406" />
+<img src="/_examples/CAD.png" height="406" /> <img src="/_examples/CAM.png" height="406" />
 
 2. Translate
 
