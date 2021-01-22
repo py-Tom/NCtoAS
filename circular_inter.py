@@ -1,3 +1,6 @@
+"""Convert cirular interpolation."""
+
+
 from math import pi, sin, cos, atan, sqrt
 
 
@@ -31,17 +34,17 @@ def set_mid_angle(s_angle, e_angle, mode):
     if s_angle < 0 or e_angle < 0:
         raise ValueError("wrong angles")
 
-    if s_angle >= 2*pi:
-        s_angle %= 2*pi
-    if e_angle >= 2*pi:
-        e_angle %= 2*pi
+    if s_angle >= 2 * pi:
+        s_angle %= 2 * pi
+    if e_angle >= 2 * pi:
+        e_angle %= 2 * pi
 
     if s_angle == e_angle:
         m_angle = pi + s_angle
     else:
         m_angle = (e_angle - s_angle) / 2 + s_angle
 
-    if (s_angle < e_angle and mode == 'CCW') or (s_angle > e_angle and mode == 'CW'):
+    if (s_angle < e_angle and mode == "CCW") or (s_angle > e_angle and mode == "CW"):
         m_angle += pi
 
     return round(m_angle, 7)
@@ -66,5 +69,12 @@ def set_mid_point(start_point, end_point, center, mode):
     radius = sqrt(center[0] ** 2 + center[1] ** 2)
     m_point = set_mid_coord(mid_angle, radius, circle.x, circle.y)
 
-    middle_point = (m_point[0], m_point[1], start_point[2], start_point[3], start_point[4], start_point[5])
+    middle_point = (
+        m_point[0],
+        m_point[1],
+        start_point[2],
+        start_point[3],
+        start_point[4],
+        start_point[5],
+    )
     return middle_point
